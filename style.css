@@ -1,0 +1,57 @@
+/* style.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+}
+
+.calculator {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* 모서리가 둥글게 잘 보이도록 */
+}
+
+.display {
+  background-color: #333;
+  color: white;
+  font-size: 2.5em;
+  text-align: right;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  /* 4개의 열(column)을 1:1:1:1 비율로 만듭니다 */
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+button {
+  font-size: 1.5em;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer; /* 마우스를 올리면 손가락 모양으로 */
+}
+
+/* 버튼에 마우스를 올렸을 때 */
+button:hover {
+  background-color: #f9f9f9;
+}
+
+/* 연산자 버튼 스타일 */
+.operator {
+  background-color: #f9a825; /* 주황색 */
+  color: white;
+}
+
+.operator:hover {
+  background-color: #f59f00;
+}
